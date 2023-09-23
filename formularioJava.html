@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input e mostrar na tela</title>
+    <style>
+        /* Estilize conforme desejado */
+    </style>
+</head>
+<body>
+    <input type="text" id="texto" placeholder="Nome">
+    <button onclick="mostrarTexto()">Mostrar</button>
+    <br>
+    <span>voce digitou: </span>
+    <span id="resultado">
+
+    </span>
+
+    <script>
+        function mostrarTexto() {
+            // Obtenha o valor do campo de entrada
+            var nome1 = document.getElementById("texto").value;
+
+            // Exiba o texto na tela
+            document.getElementById("resultado").innerHTML = nome1;
+        }
+    </script>
+</body>
+</html>
